@@ -4,16 +4,22 @@
 
 
 let numbers = [];
+let result = 0;
 
 for ( let i = 0; i < 10; i++ ){
     let userNumbers = prompt('please enter a number');
     numbers.push(userNumbers);
 }
 
-if (numbers.length == 10){
+if ( numbers.length == 10 ){
     console.log(numbers);
 }
 
+for ( let i = 0; i < numbers.length; i++){
+    result += parseInt(numbers[i]);
+}
+
+console.log(result); 
 
 
 
